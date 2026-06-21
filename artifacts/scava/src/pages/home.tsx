@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative h-[100dvh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/attached_assets/697104088_18113622721681451_8866964268758494484_n_1782019857032.webp"
+            src="/images/697104088_18113622721681451_8866964268758494484_n.jpeg"
             alt="SCAVA Brew & Play"
             className="w-full h-full object-cover object-center opacity-80"
           />
@@ -67,7 +67,7 @@ export default function Home() {
             >
               <Link href="/court" className="block relative aspect-[4/5] overflow-hidden mb-6 bg-muted">
                 <img 
-                  src="/attached_assets/701681409_18114005704681451_1845685546638975569_n_1782019857033.webp" 
+                  src="/images/701681409_18114005704681451_1845685546638975569_n.jpeg" 
                   alt="Pickleball Action"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                 />
@@ -88,7 +88,7 @@ export default function Home() {
             >
               <Link href="/menu" className="block relative aspect-[4/5] overflow-hidden mb-6 bg-muted">
                 <img 
-                  src="/attached_assets/696911460_18113623228681451_6374299818862206657_n_1782019857032.webp" 
+                  src="/images/696911460_18113623228681451_6374299818862206657_n.jpeg" 
                   alt="Coffee Pour"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                 />
@@ -113,7 +113,7 @@ export default function Home() {
               We built SCAVA for those who live with purpose. A Scandinavian-inspired pause button in the heart of Nellore.
             </p>
             <img 
-              src="/attached_assets/705137631_18114490417681451_1703738698746805045_n_1782019857034.webp"
+              src="/images/705137631_18114490417681451_1703738698746805045_n.jpeg"
               alt="Energy finds stillness"
               className="w-full max-w-2xl mx-auto opacity-80 mix-blend-lighten"
             />
@@ -124,10 +124,10 @@ export default function Home() {
       {/* Grid */}
       <section className="py-4 md:py-8 bg-background overflow-hidden">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 px-4 md:px-8">
-          <img src="/attached_assets/707826874_18115258984681451_4359587910290484933_n_1782019857035.webp" className="aspect-square object-cover w-full bg-muted" alt="Brewcycle" />
-          <img src="/attached_assets/724767809_18118349683681451_8599785582232317447_n_1782019857036.webp" className="aspect-square object-cover w-full bg-muted" alt="SCAVA Character" />
-          <img src="/attached_assets/704546859_18114433660681451_23922467555766077_n_1782019857033.webp" className="aspect-square object-cover w-full bg-muted" alt="Coffee OClock" />
-          <img src="/attached_assets/707397977_18115302730681451_7256662145388895970_n_1782019857035.webp" className="aspect-square object-cover w-full bg-muted" alt="Collage" />
+          <img src="/images/707826874_18115258984681451_4359587910290484933_n.jpeg" className="aspect-square object-cover w-full bg-muted" alt="Brewcycle" />
+          <img src="/images/724767809_18118349683681451_8599785582232317447_n.jpeg" className="aspect-square object-cover w-full bg-muted" alt="SCAVA Character" />
+          <img src="/images/704546859_18114433660681451_23922467555766077_n.jpeg" className="aspect-square object-cover w-full bg-muted" alt="Coffee OClock" />
+          <img src="/images/707397977_18115302730681451_7256662145388895970_n.jpeg" className="aspect-square object-cover w-full bg-muted" alt="Collage" />
         </div>
       </section>
 

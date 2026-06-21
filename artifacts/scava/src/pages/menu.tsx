@@ -71,9 +71,9 @@ export default function Menu() {
                 >
                   <div className="w-full sm:w-32 h-32 bg-muted flex-shrink-0 relative overflow-hidden">
                     {item.category === "coffee" ? (
-                      <img src="/attached_assets/696911460_18113623228681451_6374299818862206657_n_1782019857032.webp" className="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Coffee" />
+                      <img src="/images/696911460_18113623228681451_6374299818862206657_n.jpeg" className="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Coffee" />
                     ) : (
-                      <img src="/attached_assets/721323014_18117765889681451_571777943826944455_n_1782019857036.webp" className="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Bite" />
+                      <img src="/images/721323014_18117765889681451_571777943826944455_n.jpeg" className="w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-110 transition-transform duration-500" alt="Bite" />
                     )}
                   </div>
                   <div className="flex-1 w-full">

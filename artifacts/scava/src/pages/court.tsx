@@ -75,7 +75,7 @@ export default function Court() {
         <section className="relative h-[60vh] bg-foreground text-background overflow-hidden flex items-center">
           <div className="absolute inset-0 opacity-40 mix-blend-luminosity">
             <img 
-              src="/attached_assets/704697063_18114619471681451_6335093727679225469_n_1782019857034.webp"
+              src="/images/704697063_18114619471681451_6335093727679225469_n.jpeg"
               alt="Court Diagram"
               className="w-full h-full object-cover"
             />

@@ -34,7 +34,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* We will use a text logo or the image. The prompt provides logos. Let's use the dark on light logo for scrolled, or just an img */}
           <img 
-            src="/attached_assets/683656743_18110379232681451_7397324887801731439_n_1782019857018.webp" 
+            src="/images/683656743_18110379232681451_7397324887801731439_n.jpeg" 
             alt="SCAVA Logo" 
             className="h-8 w-auto mix-blend-multiply"
           />

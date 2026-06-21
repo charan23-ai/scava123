@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           <div className="col-span-1 md:col-span-2">
             <img 
-              src="/attached_assets/682571368_18110365993681451_5440762654025595437_n_1782019864994.jpg" 
+              src="/images/683656743_18110379232681451_7397324887801731439_n.jpeg" 
               alt="SCAVA Logo Alt" 
               className="h-12 w-auto mb-6 opacity-90"
             />

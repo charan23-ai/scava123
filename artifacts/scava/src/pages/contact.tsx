@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
 
               <img 
-                src="/attached_assets/719506408_18117386863681451_7638047361452930122_n_1782019857036.jpg" 
+                src="/images/719506408_18117386863681451_7638047361452930122_n.jpeg" 
                 alt="SCAVA Cafe" 
                 className="w-full h-64 object-cover"
               />
