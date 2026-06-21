@@ -1,15 +1,21 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: SCAVA Café & Pickleball API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: bookings
+    description: Court booking operations
+  - name: menu
+    description: Menu operations
+  - name: contact
+    description: Contact and event inquiries
+
 paths:
   /healthz:
     get:
@@ -24,6 +30,168 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /menu:
+    get:
+      operationId: listMenuItems
+      tags: [menu]
+      summary: List all menu items
+      parameters:
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of menu items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/MenuItem"
+
+  /bookings:
+    get:
+      operationId: listBookings
+      tags: [bookings]
+      summary: List all court bookings
+      responses:
+        "200":
+          description: List of bookings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Booking"
+    post:
+      operationId: createBooking
+      tags: [bookings]
+      summary: Create a new court booking
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BookingInput"
+      responses:
+        "201":
+          description: Booking created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Booking"
+        "409":
+          description: Slot already booked
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /bookings/available-slots:
+    get:
+      operationId: getAvailableSlots
+      tags: [bookings]
+      summary: Get available time slots for a given date
+      parameters:
+        - name: date
+          in: query
+          required: true
+          schema:
+            type: string
+            description: Date in YYYY-MM-DD format
+      responses:
+        "200":
+          description: Available time slots
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TimeSlot"
+
+  /bookings/{id}:
+    get:
+      operationId: getBooking
+      tags: [bookings]
+      summary: Get a booking by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Booking detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Booking"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+    delete:
+      operationId: cancelBooking
+      tags: [bookings]
+      summary: Cancel a booking
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Booking cancelled
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Booking"
+        "404":
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /contact:
+    post:
+      operationId: submitContact
+      tags: [contact]
+      summary: Submit a contact or event inquiry
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ContactInput"
+      responses:
+        "201":
+          description: Inquiry submitted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ContactInquiry"
+
+  /stats:
+    get:
+      operationId: getStats
+      tags: [bookings]
+      summary: Get court booking stats and highlights
+      responses:
+        "200":
+          description: Booking statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Stats"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +202,136 @@ components:
       required:
         - status
 
+    MenuItem:
+      type: object
+      required: [id, name, category, price, description]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        category:
+          type: string
+          description: "coffee | bites"
+        price:
+          type: number
+        description:
+          type: string
+        tag:
+          type: ["string", "null"]
+          description: Optional highlight tag e.g. "Signature", "Chef's Pick"
+        isSpicy:
+          type: boolean
+
+    Booking:
+      type: object
+      required: [id, name, email, phone, date, timeSlot, players, status, createdAt]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        date:
+          type: string
+        timeSlot:
+          type: string
+        players:
+          type: integer
+        notes:
+          type: ["string", "null"]
+        status:
+          type: string
+          description: "confirmed | cancelled"
+        createdAt:
+          type: string
+
+    BookingInput:
+      type: object
+      required: [name, email, phone, date, timeSlot, players]
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        date:
+          type: string
+          description: YYYY-MM-DD
+        timeSlot:
+          type: string
+          description: "e.g. 09:00 - 10:00"
+        players:
+          type: integer
+          minimum: 1
+          maximum: 8
+        notes:
+          type: string
+
+    TimeSlot:
+      type: object
+      required: [slot, available]
+      properties:
+        slot:
+          type: string
+        available:
+          type: boolean
+
+    ContactInquiry:
+      type: object
+      required: [id, name, email, phone, inquiryType, message, createdAt]
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        inquiryType:
+          type: string
+          description: "private | corporate | tournament | general"
+        message:
+          type: string
+        createdAt:
+          type: string
+
+    ContactInput:
+      type: object
+      required: [name, email, phone, inquiryType, message]
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        inquiryType:
+          type: string
+        message:
+          type: string
+
+    Stats:
+      type: object
+      required: [totalBookings, todayBookings, popularSlot, popularPlayers]
+      properties:
+        totalBookings:
+          type: integer
+        todayBookings:
+          type: integer
+        popularSlot:
+          type: ["string", "null"]
+        popularPlayers:
+          type: ["integer", "null"]
+
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string

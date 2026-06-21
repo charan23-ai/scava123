@@ -1,0 +1,161 @@
+scavacafe
+Scava
+12 posts
+186 followers
+6 following
+Restaurant
+Pickleball Court | Café
+📍 Nellore, Andhra Pradesh
+Coffee.Court.Culture
+DM to book your game
+
+https://www.instagram.com/scavacafe/
+
+SCAVA is not just a café. It’s a statement.
+
+A space where premium coffee meets high energy lifestyle, bringing together refined taste and modern sport.
+
+Introducing a first of its kind experience in Nellore, a café built around the spirit of pickleball.
+
+Rooted in a coffee cored culture, SCAVA is designed for those who live with intent, to connect, compete, and unwind in one place.
+
+From slow brews to fast rallies, this is not just where you hang out. This is where you show up.
+
+Welcome to SCAVA.
+
+#café #pickleball #nellore
+
+More than coffee. More than a court.
+SCAVA is where specialty brews, movement, and community come together.
+
+Built on Scandinavian-inspired simplicity, designed for people who appreciate good coffee, meaningful conversations, and the thrill of play.
+
+Brew hard. Play harder. ☕🏓
+
+#ScavaCoffee #BrewAndPlay #PickleballLifestyle #ScandinavianCafe #Nellorecafe
+5 w
+
+Good coffee was never meant to be rushed.
+At SCAVA, every cup is brewed with patience, precision, and purpose.
+
+Drip coffee is more than a method, it’s a ritual. A slower process that lets every note, aroma, and flavor unfold exactly as it should.
+
+Slow extraction. Better coffee. Better moments. ☕
+
+#ScavaCoffee #DripCoffee #SlowCoffeeCulture #SpecialtyCoffee #BrewedWithPurpose
+5 w
+
+Before or after the game, it all happens here.
+The rallys get longer, conversations get better, and coffee becomes part of the routine.
+
+SCAVA was built for people who like their spaces the same way they like their lifestyle, intentional, social, and a little competitive. 🏓☕
+
+#ScavaCoffee #PickleballCulture #BrewAndPlay #SportsClub #NelloreLife
+4 w
+
+Coffee tastes different when you stop rushing. ☕
+
+At SCAVA, we believe great coffee is not just about caffeine, it’s about ritual, pause, and presence. The slow roast, the quiet moments, the conversations that stay longer than the cup itself.
+
+Because sometimes, the best part of the day is simply taking time for it.
+
+#SCAVAcafe #SpecialtyCoffee #CoffeeCulture #BrewAndPlay #Nellorecafe
+4 w
+
+“Not just coffee. A pause button for the chaos.” ☕🖤
+
+
+Pickleball is one of the fastest-growing social sports in the world, because it’s easy to learn, low-impact, and made for all age groups. 🎾
+
+At SCAVA, it’s more than a game.
+It’s movement, conversation, community, and coffee, all in one space.
+
+Come rally, recharge, and reconnect in Nellore.
+
+#SCAVACafe #PickleballIndia #NelloreLifestyle #CommunityThroughSport #CafeAndCulture
+4 w
+
+Coffee isn’t just a drink.
+It’s a ritual ☕
+
+Prepare. Measure. Brew. Wait. Enjoy. Repeat.
+That one perfect cup that keeps bringing you back for more 🤎
+
+The rhythm of great coffee lives at SCAVA.
+
+#ScavaBrews #CoffeeRitual #BrewCycle #PourOverCoffee #NelloreCafe
+3 w
+
+Some places serve coffee.
+Some places serve a whole vibe. ☕🏓
+Good rallies, louder laughs, and cups that stay in your hand longer than planned. SCAVA is where the game and the hangout meet.
+
+#SCAVA #PickleballLife #NelloreCafe #CafeExperience #SportsAndChill
+3 w
+
+Sometimes, the right café isn't about the menu. It's about how the space makes you feel.
+
+Natural light, warm corners, and an atmosphere that makes you want to slow down and stay a little longer. ☕✨
+
+A glimpse into the interiors of SCAVA.
+
+#NelloreCafe #ScavaCafe #CafeInteriors #CafeVibes #CoffeeLovers
+1 w
+
+Malli Kaalan Vada.
+
+Because "I'll just have one" is a lie we tell ourselves. 🍄🔥
+
+#Scavacafe #MalliKaalanVada #NelloreCafe #SpiceLovers #MadeToCrave
+1 w
+
+Some coffees wake you up. Some stay with you. ☕✨
+
+At Scava Café, every cup is brewed with character, crafted for conversations, and made to leave a lasting impression. Drop in, slow down, and taste beyond the ordinary.
+
+📍 Scava Café, Nellore
+
+#ScavaCafe #CoffeeWithCharacter #NelloreCafe #CoffeeShopNellore #ScavaNellore
+4 d
+
+
+Scava cafe, 26-12-1077-2, RTO Office Rd, Rajula Complex, Bank Colony, Nellore, Andhra Pradesh 524004
+
+You are an elite UI/UX Designer and a Senior Full-Stack Developer. Your task is to build a beautiful, high-converting, end-to-end web application for "SCAVA" — a premium specialty café and pickleball court community based in Nellore. 
+
+The website must act as both a visual brand statement and an operational tool to drive customer acquisition, court bookings, and community engagement.
+
+### 1. BRAND IDENTITY & VISUAL AESTHETICS (CRITICAL)
+SCAVA's identity is defined by "Scandinavian-inspired simplicity" meets "high-energy lifestyle." You must implement the following design tokens strictly:
+- **Design Philosophy:** Minimalist, intentional, structured, and premium. Lots of whitespace, crisp typography, and high-contrast layouts.
+- **Color Palette:** - Dominant: Deep charcoal/matte black and crisp architectural whites.
+  - Accents: Warm earth tones (latte, espresso browns) and a sharp, muted energetic tone (like a refined pickleball neon/volt or court green used very sparingly for CTA highlights).
+- **Typography:** Bold, clean sans-serif headings (e.g., Inter, Syne, or Clash Display vibes) with highly readable, spacious body text.
+- **Atmosphere:** Evoke a "pause button for the chaos." Use smooth, organic fade-in animations and transitions that mimic a premium lifestyle portfolio rather than a generic template.
+
+### 2. CORE PAGES & STRUCTURE
+- **Home Page:**
+  - **Hero Section:** High-impact bold typography stating "More than coffee. More than a court." or "Brew hard. Play harder." Split layout or overlapping visual blocks showcasing the dual nature of the space (Specialty Drip Coffee & Fast Rallies).
+  - **About / The Vibe:** Elegant text layout explaining the Scandinavian design, the community, and the ritual of slow-brewed coffee.
+  - **Feature Split:** Two prominent, beautifully designed entry points: "The Court" (Pickleball) and "The Brew" (Café Menu teaser featuring items like the Malli Kaalan Vada).
+  - **Social Proof / Instagram Grid:** A clean, curated mockup section displaying community moments.
+- **The Court (Pickleball Experience):**
+  - Informational section explaining why pickleball is the fastest-growing social sport.
+  - Interactive court scheduler/booking widget framework.
+- **The Brew & Bite (Interactive Menu):**
+  - A gorgeous, minimalist menu grid highlighting specialty drip coffee, slow roasts, and signature items (like the spicy mushroom Malli Kaalan Vada). Include filter tabs for "Coffee Rituals" and "Bites".
+
+### 3. CONVERSION & FUNCTIONAL FEATURES
+- **Court Booking Engine:** Create an intuitive, step-by-step reservation system where users can select a date, time slot, and number of players. Include a clean summary breakdown before a mock checkout.
+- **"Show Up" Call-to-Actions (CTAs):** High-contrast sticky navigation buttons for "Book a Court" or "Find Us".
+- **Location & Hours Widget:** Dedicated, high-end map integration placeholder and operational hours tailored for Nellore locals.
+- **Contact & Events Panel:** A sleek form for private court bookings, corporate events, or community tournaments.
+
+### 4. TECHNICAL & ARCHITECTURAL REQUIREMENTS
+- **Tech Stack:** Build this using a modern, fast full-stack architecture (e.g., Next.js/React with Tailwind CSS, or Vite + Python/Node backend as per Replit's optimal native setup).
+- **Responsiveness:** Flawless mobile-first design. The mobile viewport must feel like a premium native lifestyle app.
+- **State Management:** Fully functional front-end state for the booking flows, menu sorting, and contact form submissions. Use a local Replit database to persist mock court bookings so they don't disappear on refresh.
+- **Clean Code:** Componentize the code heavily (e.g., `Hero.jsx`, `BookingCalendar.jsx`, `MenuGrid.jsx`). Use Tailwind utility classes intelligently to maintain the strict minimalist design system.
+
+Start by outlining the component structure, validating the design tokens, and then proceed to build the full application step-by-step.
+
