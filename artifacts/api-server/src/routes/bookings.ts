@@ -7,6 +7,7 @@ import {
   GetBookingParams,
   CancelBookingParams,
 } from "@workspace/api-zod";
+import { sendBookingNotification } from "../lib/email";
 
 const router = Router();
 
@@ -104,6 +105,8 @@ router.post("/bookings", async (req, res) => {
     .insert(bookingsTable)
     .values({ ...data, status: "confirmed" })
     .returning();
+
+  sendBookingNotification(newBooking).catch(() => {});
 
   res.status(201).json({ ...newBooking, createdAt: newBooking.createdAt.toISOString() });
 });

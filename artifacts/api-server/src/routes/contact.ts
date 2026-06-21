@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { db, contactInquiriesTable } from "@workspace/db";
 import { SubmitContactBody } from "@workspace/api-zod";
+import { sendContactNotification } from "../lib/email";
 
 const router = Router();
 
@@ -16,6 +17,8 @@ router.post("/contact", async (req, res) => {
     .insert(contactInquiriesTable)
     .values(data)
     .returning();
+
+  sendContactNotification(inquiry).catch(() => {});
 
   res.status(201).json({ ...inquiry, createdAt: inquiry.createdAt.toISOString() });
 });
